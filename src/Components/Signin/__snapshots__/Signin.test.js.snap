@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Signin component renders the Component 1`] = `
+<div>
+  <form
+    className="RegistrationForm"
+    onSubmit={[Function]}
+  >
+    <h1
+      className=" mb-3 mt-3"
+    >
+      <Link
+        replace={false}
+        to="/"
+      >
+        Portfolio Builder
+      </Link>
+    </h1>
+    <h1
+      className="mb-3 mt-3 col_theme"
+    >
+      Log In
+    </h1>
+    <div
+      className="error-message"
+    />
+    <div
+      className="inputdiv"
+    >
+      <label
+        htmlFor="user_name"
+      >
+        User 
+      </label>
+      <input
+        id="user_name"
+        name="user_name"
+        required={true}
+        type="text"
+      />
+    </div>
+    <div
+      className="inputdiv"
+    >
+      <label
+        htmlFor="password"
+      >
+        Password
+      </label>
+      <input
+        id="password"
+        name="password"
+        required={true}
+        type="password"
+      />
+    </div>
+    <div
+      className="text-center mb-3 mt-3"
+    >
+      <Link
+        className="col_theme"
+        replace={false}
+        to="/register"
+      >
+        Register Instead
+      </Link>
+    </div>
+    <div
+      className="text-center mb-2"
+    >
+      <input
+        type="submit"
+        value="Submit"
+      />
+    </div>
+  </form>
+</div>
+`;

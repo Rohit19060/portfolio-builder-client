@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders the Component 1`] = `
+<Fragment>
+  <nav
+    className="Header"
+  >
+    <h1>
+      <Link
+        replace={false}
+        to="/"
+      >
+        Portfolio Builder
+      </Link>
+    </h1>
+    <div
+      className="Header__not-logged-in"
+    >
+      <Link
+        replace={false}
+        to="/login"
+      >
+        Log in
+      </Link>
+      <Link
+        replace={false}
+        to="/register"
+      >
+        Register
+      </Link>
+    </div>
+  </nav>
+</Fragment>
+`;

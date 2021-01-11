@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage component renders the Component 1`] = `
+<Fragment>
+  <Header />
+  <div
+    className="main_div"
+  >
+    <h1
+      className="text-center title"
+    >
+      Time to make your own Portfolio
+    </h1>
+    <h3
+      className="text-center sub"
+    >
+      If you want to make your Portfolio for free, then you came at right place. you can generate your portfolio in few steps
+    </h3>
+    <div
+      className="sub_buttons"
+    >
+      <Link
+        className="getstarted text-center"
+        replace={false}
+        to="/get-started"
+      >
+        Get Started
+      </Link>
+      <Link
+        className="getstarted text-center"
+        replace={false}
+        to="/howtouse"
+      >
+        How to use it
+      </Link>
+    </div>
+  </div>
+</Fragment>
+`;

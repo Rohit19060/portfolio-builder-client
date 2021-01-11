@@ -1,0 +1,17 @@
+.howtouse {
+    margin: 10%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: 1.5px;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.steps tr :first-child {
+    font-weight: bolder;
+}
+
+.steps tr td {
+    padding: 15px;
+}

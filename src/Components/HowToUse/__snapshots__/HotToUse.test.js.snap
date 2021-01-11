@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowToUse component renders the Component 1`] = `
+<Fragment>
+  <Header />
+  <div
+    className="howtouse"
+  >
+    <h2
+      className="text-center"
+    >
+      If you want to make your Portfolio for free, then you came at right place. you can generate your portfolio in few steps
+    </h2>
+    <br />
+    <table
+      className="steps"
+    >
+      <tr>
+        <td>
+          Step I 
+        </td>
+        <td>
+          Register Your self
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step II 
+        </td>
+        <td>
+          Register Your self
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step III 
+        </td>
+        <td>
+          Choose Template and your will see a form that you need to fill
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Step IV 
+        </td>
+        <td>
+          Download Template and that's sit you get your simple portfolio.
+        </td>
+      </tr>
+    </table>
+  </div>
+</Fragment>
+`;

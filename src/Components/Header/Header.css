@@ -1,0 +1,42 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.Header__not-logged-in,
+.Header__logged-in {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Header__not-logged-in a,
+.Header__logged-in a {
+  border-radius: 30px;
+  border: 2px rgb(42, 176, 230) solid;
+  outline: none;
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(42, 176, 230);
+  box-shadow: -1px -1px 42px 1px rgb(42, 176, 230);
+}
+
+.Header__not-logged-in a:hover,
+.Header__logged-in a:hover {
+  background-color: rgb(42, 176, 230);
+  color: white;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 450px) {
+  .Header {
+    align-items: baseline;
+  }
+
+  .Header h1 {
+    font-size: 22pt;
+  }
+}

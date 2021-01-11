@@ -1,0 +1,24 @@
+.Templated_Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.download_button {
+    border-radius: 30px;
+    border: 2px white solid;
+    outline: none;
+    padding: 5px 15px;
+    background-color: rgb(42, 176, 230);
+    color: white;
+    box-shadow: -1px -1px 42px 1px rgb(42, 176, 230);
+    cursor: pointer;
+}
+
+.download_button:hover {
+    background-color: white;
+    color: rgb(42, 176, 230);
+    box-shadow: none;
+    border: 2px rgb(42, 176, 230) solid;
+}

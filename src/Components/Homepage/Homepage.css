@@ -1,0 +1,48 @@
+ .main_div {
+     height: 50vh;
+     margin: 5% 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: rgb(42, 176, 230);
+     border-radius: 15px;
+     color: whitesmoke;
+     font-family: 'Arial Narrow Bold', sans-serif;
+     box-shadow: -1px -1px 12px 5px rgba(232, 232, 232, 1);
+ }
+
+ .getstarted {
+     border-radius: 30px;
+     border: 2px white solid;
+     outline: none;
+     padding: 5px 15px;
+     background-color: white;
+     color: rgb(42, 176, 230);
+     box-shadow: -1px -1px 42px 1px white;
+ }
+
+ .getstarted:hover {
+     background-color: rgb(42, 176, 230);
+     color: white;
+     box-shadow: none;
+ }
+
+ .sub {
+     width: 40%;
+     word-wrap: break-word;
+     letter-spacing: 1px;
+
+ }
+
+ .title {
+     font-size: 50px;
+     letter-spacing: 1px;
+ }
+
+ .sub_buttons {
+     width: 40%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
