@@ -2,12 +2,7 @@
 
 <h3 align="center">You can build your portfolio in couple of minutes</h3>
 
-</br>
-</br>
-
 ## Table of Contents
-
----
 
 - [Links](#links)
 - [Available Scripts](#available-scripts)
@@ -15,12 +10,7 @@
 - [Future Updates](#future-updates)
 - [Contact](#author)
 
-</br>
-</br>
-
 ## Links
-
----
 
 - [Live View](https://portfolio-builder-client.vercel.app/)
 
@@ -30,12 +20,7 @@
 
 - [Api Endpoint Repo](https://github.com/Rohit19060/portfolio-builder-api)
 
-</br>
-</br>
-
 ## Available Scripts
-
----
 
 In the project directory, you can run:
 
@@ -62,22 +47,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-</br>
-</br>
-
 ## Future Updates
-
----
 
 - To add Html Editor
 - To add Loading screen while fetching the data
 
-</br>
-</br>
-
 ## Author
-
----
 
 **Rohit Jain**
 
@@ -85,12 +60,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [Email](rohitjain19060@gmail.com)
 - [Website](https://kingtechnologies.in)
 
-</br>
-</br>
-
 ## 🤝 Support
-
----
 
 Contributions, issues and feature requests are welcome!
 
