@@ -47,6 +47,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Built With
+
+- React
+- Redux
+- NPM
+- Express
+- Postgres
+- Heroku
+- Vercel
+
 ## Future Updates
 
 - To add Html Editor
