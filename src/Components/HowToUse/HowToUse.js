@@ -23,7 +23,7 @@ export default class HowToUse extends Component {
             <tbody>
               <tr>
                 <td>Step II </td>
-                <td>Register Your self</td>
+                <td>Log In</td>
               </tr>
               <tr>
                 <td>Step III </td>
