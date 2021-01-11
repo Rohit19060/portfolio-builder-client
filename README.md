@@ -1,42 +1,41 @@
-# Portfolio BUilder Client
+<h1 align="center"><a href="https://portfolio-builder-client.vercel.app/">Portfolio Builder</a></h1>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-<h2 align="center"><a href="https://portfolio-builder-client.vercel.app/">Portfolio Builder</a></h2>
 <h3 align="center">You can build your portfolio in couple of minutes</h3>
 
-<!-- TABLE OF CONTENTS -->
+</br>
+</br>
 
 ## Table of Contents
+
+---
 
 - [Links](#links)
 - [Available Scripts](#available-scripts)
 - [Built With](#built-with)
 - [Future Updates](#future-updates)
-- [Contact](#Authors)
+- [Contact](#author)
+
+</br>
+</br>
 
 ## Links
 
-### Live View
+---
 
-[Click Here](https://portfolio-builder-client.vercel.app/)
+- [Live View](https://portfolio-builder-client.vercel.app/)
 
-### Repo
+- [Repo](https://github.com/Rohit19060/portfolio-builder-client)
 
-[Click Here](https://github.com/Rohit19060/portfolio-builder-client)
+- [Api Endpoint](https://enigmatic-tundra-24310.herokuapp.com)
 
-### Api Endpoint
+- [Api Endpoint Repo](https://github.com/Rohit19060/portfolio-builder-api)
 
-[Click Here](https://enigmatic-tundra-24310.herokuapp.com)
-
-### Api Endpoint Repo
-
-[Click Here](https://github.com/Rohit19060/portfolio-builder-api)
+</br>
+</br>
 
 ## Available Scripts
+
+---
 
 In the project directory, you can run:
 
@@ -63,25 +62,38 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+</br>
+</br>
+
 ## Future Updates
 
+---
+
 - To add Html Editor
-- To add Couple of themes
 - To add Loading screen while fetching the data
+
+</br>
+</br>
 
 ## Author
 
-👤 **Rohit Jain**
+---
+
+**Rohit Jain**
 
 - [GitHub](https://github.com/rohit19060)
 - [Email](rohitjain19060@gmail.com)
+- [Website](https://kingtechnologies.in)
 
-## 🤝 Contributing
+</br>
+</br>
+
+## 🤝 Support
+
+---
 
 Contributions, issues and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
-
-## Show your support
 
 Give a ⭐️ if you like this project!
