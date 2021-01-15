@@ -20,6 +20,10 @@
 
 - [Api Endpoint Repo](https://github.com/Rohit19060/portfolio-builder-api)
 
+## Screenshot
+
+[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://github.com/Rohit19060/portfolio-builder-client/blob/main/screenshot/1.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
