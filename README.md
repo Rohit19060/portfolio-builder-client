@@ -22,9 +22,8 @@
 
 ## Screenshot
 
-[![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://github.com/Rohit19060/portfolio-builder-client/blob/main/screenshot/1.png)
-
-![Philadelphia's Magic Gardens. This place was so cool!](/screenshot/1.png "Philadelphia's Magic Gardens")
+![Home Page](/screenshot/1.png "First page to User")
+![Get Started Page](/screenshot/2.png "All the Templates")
 
 ## Available Scripts
 
