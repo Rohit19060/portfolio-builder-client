@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthApiService from "../../services/auth-api-service";
 import "./Register.css";
-class Register extends Component {
+export default class Register extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => {},
   };
@@ -36,14 +36,22 @@ class Register extends Component {
             <Link to="/">Portfolio Builder</Link>
           </h1>
           <h1 className="mb-3 mt-3 col_theme">Register</h1>
-          <div className="error-message">{error && <p>{error.message}</p>}</div>
+          <div className="error-message">
+            <p>{error}</p>
+          </div>
           <div className="inputdiv">
             <label htmlFor="user_name">User </label>
             <input type="text" name="user_name" id="username" required />
           </div>
           <div className="inputdiv">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password" required />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autoComplete="on"
+            />
           </div>
           <div className="text-center mb-3 mt-3">
             <Link to="/login" className="col_theme">
@@ -58,4 +66,3 @@ class Register extends Component {
     );
   }
 }
-export default Register;

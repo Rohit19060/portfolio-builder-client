@@ -9,8 +9,8 @@ export default class HowToUse extends Component {
         <Header />
         <div className="howtouse">
           <h2 className="text-center">
-            If you want to make your Portfolio for free, then you came at right
-            place. you can generate your portfolio in few steps
+            If you want to make your Portfolio for free, then you came to the
+            right place. You can generate your portfolio in a few steps
           </h2>
           <br />
           <table className="steps">
@@ -28,13 +28,13 @@ export default class HowToUse extends Component {
               <tr>
                 <td>Step III </td>
                 <td>
-                  Choose Template and your will see a form that you need to fill
+                  Choose Template and you will see a form that you need to fill
                 </td>
               </tr>
               <tr>
                 <td>Step IV </td>
                 <td>
-                  Download Template and that's sit you get your simple
+                  Download Template and that's where you get your simple
                   portfolio.
                 </td>
               </tr>

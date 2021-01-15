@@ -4,23 +4,25 @@ import { Link } from "react-router-dom";
 import config from "../../config";
 import "./GetStarted.css";
 export default class GetStarted extends Component {
-  state = { count: 0 };
+  state = { templateData: [] };
   componentDidMount() {
-    fetch(`${config.API_ENDPOINT}/templates/count`).then((res) => {
+    fetch(`${config.API_ENDPOINT}/templates/templateData`).then((res) => {
       res.json().then((content) => {
-        this.setState({ count: content.count });
+        this.setState({ templateData: content.templateData });
       });
     });
   }
   rendertemplates() {
     var rows = [];
-    for (var i = 1; i <= this.state.count; i++) {
+    this.state.templateData.forEach((element, i) => {
       rows.push(
-        <Link to={`/templates/${i}`} key={i} className="item text-center">
-          <h3>Template {i}</h3>
+        <Link to={`/templates/${i + 1}`} key={i} className="item text-center">
+          <h2>Template {i + 1}</h2>
+          <br />
+          <h3> {element}</h3>
         </Link>
       );
-    }
+    });
     return rows;
   }
   render() {
@@ -32,9 +34,6 @@ export default class GetStarted extends Component {
           Build a beautiful portfolio in minutes by choosing templates.
         </h4>
         <section className="container_x">{this.rendertemplates()}</section>
-        <div className="text-center sub_x">
-          Want to create a welcome page/portfolio instead
-        </div>
       </div>
     );
   }

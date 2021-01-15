@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AuthApiService from "../../services/auth-api-service";
 import TokenService from "../../services/token-service";
 import "./Signin.css";
-class Signin extends Component {
+export default class Signin extends Component {
   static defaultProps = {
     onLoginSuccess: () => {},
   };
@@ -12,7 +12,6 @@ class Signin extends Component {
 
   handleSubmitJwtAuth = (ev) => {
     ev.preventDefault();
-    this.setState({ error: null });
     const { user_name, password } = ev.target;
 
     AuthApiService.postLogin({
@@ -39,14 +38,22 @@ class Signin extends Component {
             <Link to="/">Portfolio Builder</Link>
           </h1>
           <h1 className="mb-3 mt-3 col_theme">Log In</h1>
-          <div className="error-message">{error && <p>{error.message}</p>}</div>
+          <div className="error-message">
+            <p>{error}</p>
+          </div>
           <div className="inputdiv">
             <label htmlFor="user_name">User </label>
             <input type="text" name="user_name" id="user_name" required />
           </div>
           <div className="inputdiv">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password" required />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              autoComplete="on"
+            />
           </div>
           <div className="text-center mb-3 mt-3">
             <Link to="/register" className="col_theme">
@@ -61,4 +68,3 @@ class Signin extends Component {
     );
   }
 }
-export default Signin;

@@ -8,11 +8,11 @@ import Header from "./../../Components/Header/Header";
 export default class StaticContainer extends Component {
   state = {
     __html: "",
-    form: false,
+    form: true,
     error: null,
   };
 
-  GetTempalte = () => {
+  componentDidMount() {
     const id = window.location.href.substring(
       window.location.href.lastIndexOf("/") + 1
     );
@@ -25,18 +25,14 @@ export default class StaticContainer extends Component {
       res.text().then((content) => {
         if (content === "Form") {
           this.setState({ form: true });
+        } else {
+          this.setState({ form: false, __html: content });
         }
-        this.setState({
-          __html: content,
-        });
       });
     });
-  };
-  componentDidMount() {
-    this.GetTempalte();
   }
 
-  handleclick = () => {
+  HandleClick = () => {
     var x = this.state.__html;
     const element = document.createElement("a");
     const file = new Blob([x], {
@@ -50,7 +46,6 @@ export default class StaticContainer extends Component {
 
   handleSubmit = (ev) => {
     ev.preventDefault();
-    this.setState({ error: null });
     const { name, projects, organization } = ev.target;
     TemplateService.FormData({
       name: name.value,
@@ -65,11 +60,11 @@ export default class StaticContainer extends Component {
       .catch((res) => {
         this.setState({ error: res.error });
       });
-    this.setState({ form: false });
-    this.GetTempalte();
+    window.location.reload(false);
   };
+
   render() {
-    const { error } = this.state;
+    const { error, form } = this.state;
     return (
       <>
         {this.state.form ? (
@@ -107,7 +102,7 @@ export default class StaticContainer extends Component {
           <>
             <Header />
             <div className="text-center Templated_Header">
-              <button onClick={this.handleclick} className="download_button">
+              <button onClick={this.HandleClick} className="download_button">
                 Download
               </button>
             </div>
