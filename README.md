@@ -24,6 +24,8 @@
 
 [![An old rock in the desert](/assets/images/shiprock.jpg "Shiprock, New Mexico by Beau Rogers")](https://github.com/Rohit19060/portfolio-builder-client/blob/main/screenshot/1.png)
 
+![Philadelphia's Magic Gardens. This place was so cool!](/screenshot/1.png "Philadelphia's Magic Gardens")
+
 ## Available Scripts
 
 In the project directory, you can run:
