@@ -39,7 +39,7 @@ export default class StaticContainer extends Component {
       type: "text/plain",
     });
     element.href = URL.createObjectURL(file);
-    element.download = "portfolio.html";
+    element.download = "Portfolio.html";
     document.body.appendChild(element);
     element.click();
   };
