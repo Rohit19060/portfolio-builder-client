@@ -8,7 +8,7 @@ import Header from "./../../Components/Header/Header";
 export default class StaticContainer extends Component {
   state = {
     __html: "",
-    form: true,
+    form: false,
     error: null,
   };
 
@@ -26,7 +26,7 @@ export default class StaticContainer extends Component {
         if (content === "Form") {
           this.setState({ form: true });
         } else {
-          this.setState({ form: false, __html: content });
+          this.setState({ __html: content });
         }
       });
     });
@@ -71,7 +71,7 @@ export default class StaticContainer extends Component {
     const { error, form } = this.state;
     return (
       <>
-        {this.state.form ? (
+        {form ? (
           <form className="RegistrationForm" onSubmit={this.handleSubmit}>
             <h1 className=" mb-3 mt-3">
               <Link to="/">Portfolio Builder</Link>
