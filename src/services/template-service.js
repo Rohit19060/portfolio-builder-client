@@ -2,26 +2,26 @@ import config from "../config";
 import TokenService from "./token-service";
 
 const TemplateService = {
-  FormData(formdata) {
-    formdata.token = TokenService.getAuthToken();
+  formData(formData) {
+    formData.token = TokenService.getAuthToken();
     return fetch(`${config.API_ENDPOINT}/templates/data`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(formdata),
+      body: JSON.stringify(formData),
     }).then((res) =>
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
   },
-  EditData(formdata) {
-    formdata.token = TokenService.getAuthToken();
+  EditData(formData) {
+    formData.token = TokenService.getAuthToken();
     return fetch(`${config.API_ENDPOINT}/templates/edit`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(formdata),
+      body: JSON.stringify(formData),
     }).then((res) =>
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
