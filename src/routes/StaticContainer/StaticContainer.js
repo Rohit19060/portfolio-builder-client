@@ -46,16 +46,20 @@ export default class StaticContainer extends Component {
 
   handleSubmit = (ev) => {
     ev.preventDefault();
-    const { name, projects, organization } = ev.target;
+    const { name, projects, organization, github, linkedin } = ev.target;
     TemplateService.FormData({
       name: name.value,
       projects: projects.value,
       organization: organization.value,
+      github: github.value,
+      linkedin: linkedin.value,
     })
       .then((res) => {
         name.value = "";
         projects.value = "";
         organization.value = "";
+        github.value = "";
+        linkedin.value = "";
       })
       .catch((res) => {
         this.setState({ error: res.error });
@@ -76,15 +80,15 @@ export default class StaticContainer extends Component {
             <div className="error-message">
               <p>{error}</p>
             </div>
-            <div className="inputdiv">
+            <div className="inputDiv">
               <label htmlFor="name">Name </label>
               <input type="text" name="name" id="name" required />
             </div>
-            <div className="inputdiv">
+            <div className="inputDiv">
               <label htmlFor="projects">Projects</label>
               <input type="text" name="projects" id="projects" required />
             </div>
-            <div className="inputdiv">
+            <div className="inputDiv">
               <label htmlFor="projects">Organization</label>
               <input
                 type="text"
@@ -93,7 +97,19 @@ export default class StaticContainer extends Component {
                 required
               />
             </div>
-            <br />
+            <section>
+              <br />
+              <h3>Contact Details</h3> <br />
+              <div className="inputDiv">
+                <label htmlFor="projects">Github</label>
+                <input type="url" name="github" id="github" required />
+              </div>
+              <div className="inputDiv">
+                <label htmlFor="projects">LinkedIn</label>
+                <input type="url" name="linkedin" id="linkedin" required />
+              </div>
+              <br />
+            </section>
             <div className="text-center mb-1 ">
               <input type="submit" value="Submit" />
             </div>
@@ -102,6 +118,9 @@ export default class StaticContainer extends Component {
           <>
             <Header />
             <div className="text-center Templated_Header">
+              <Link to="/edit">
+                <button className="download_button"> Edit Info </button>
+              </Link>
               <button onClick={this.HandleClick} className="download_button">
                 Download
               </button>

@@ -8,14 +8,14 @@
     box-shadow: -1px -1px 12px 5px rgba(232, 232, 232, 1);
 }
 
-.inputdiv {
+.inputDiv {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px 130px;
 }
 
-.inputdiv input {
+.inputDiv input {
     padding: 10px;
 }
 

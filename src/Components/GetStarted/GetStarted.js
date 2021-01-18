@@ -16,10 +16,12 @@ export default class GetStarted extends Component {
     var rows = [];
     this.state.templateData.forEach((element, i) => {
       rows.push(
-        <Link to={`/templates/${i + 1}`} key={i} className="item text-center">
-          <h2>Template {i + 1}</h2>
-          <br />
-          <h3> {element}</h3>
+        <Link to={`/templates/${i + 1}`} key={i} className="column text-center">
+          <div className="item">
+            <h2>Template {i + 1}</h2>
+            <br />
+            <h3> {element}</h3>
+          </div>
         </Link>
       );
     });
@@ -29,11 +31,11 @@ export default class GetStarted extends Component {
     return (
       <div>
         <Header />
-        <h1 className="text-center title_x">Welcome</h1>
-        <h4 className="text-center sub_x">
+        <h1 className="text-center">Welcome</h1>
+        <h4 className="text-center">
           Build a beautiful portfolio in minutes by choosing templates.
         </h4>
-        <section className="container_x">{this.rendertemplates()}</section>
+        <section className="row main_section">{this.rendertemplates()}</section>
       </div>
     );
   }

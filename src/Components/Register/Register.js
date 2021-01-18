@@ -32,18 +32,18 @@ export default class Register extends Component {
     return (
       <div>
         <form className="RegistrationForm" onSubmit={this.handleSubmit}>
-          <h1 className=" mb-3 mt-3">
+          <h2 className=" mb-3 mt-3">
             <Link to="/">Portfolio Builder</Link>
-          </h1>
+          </h2>
           <h1 className="mb-3 mt-3 col_theme">Register</h1>
           <div className="error-message">
             <p>{error}</p>
           </div>
-          <div className="inputdiv">
+          <div className="inputDiv">
             <label htmlFor="user_name">User </label>
             <input type="text" name="user_name" id="username" required />
           </div>
-          <div className="inputdiv">
+          <div className="inputDiv">
             <label htmlFor="password">Password</label>
             <input
               type="password"

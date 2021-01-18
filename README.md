@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Links](#links)
+- [Screenshots](#screenshots)
 - [Available Scripts](#available-scripts)
 - [Built With](#built-with)
 - [Future Updates](#future-updates)
@@ -20,7 +21,7 @@
 
 - [Api Endpoint Repo](https://github.com/Rohit19060/portfolio-builder-api)
 
-## Screenshot
+## Screenshots
 
 ![Home Page](/screenshot/1.png "First page to User")
 ![Get Started Page](/screenshot/2.png "All the Templates")

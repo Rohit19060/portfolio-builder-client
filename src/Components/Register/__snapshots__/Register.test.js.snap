@@ -6,7 +6,7 @@ exports[`Register component renders the Component 1`] = `
     className="RegistrationForm"
     onSubmit={[Function]}
   >
-    <h1
+    <h2
       className=" mb-3 mt-3"
     >
       <Link
@@ -15,7 +15,7 @@ exports[`Register component renders the Component 1`] = `
       >
         Portfolio Builder
       </Link>
-    </h1>
+    </h2>
     <h1
       className="mb-3 mt-3 col_theme"
     >
@@ -23,7 +23,9 @@ exports[`Register component renders the Component 1`] = `
     </h1>
     <div
       className="error-message"
-    />
+    >
+      <p />
+    </div>
     <div
       className="inputdiv"
     >
@@ -48,6 +50,7 @@ exports[`Register component renders the Component 1`] = `
         Password
       </label>
       <input
+        autoComplete="on"
         id="password"
         name="password"
         required={true}

@@ -7,6 +7,7 @@ import Homepage from "../Homepage/Homepage";
 import HowToUse from "../HowToUse/HowToUse";
 import LoginPage from "../../routes/LoginPage/LoginPage";
 import RegistrationPage from "../../routes/RegistrationPage/RegistrationPage";
+import EditPage from "../../routes/EditPage/EditPage";
 import NotFoundPage from "../../routes/NotFoundPage/NotFoundPage";
 import StaticContainer from "../../routes/StaticContainer/StaticContainer";
 import "./App.css";
@@ -26,6 +27,7 @@ export default class App extends Component {
         <Switch>
           <PrivateRoute path={"/templates/:id"} component={StaticContainer} />
           <PrivateRoute path={"/get-started"} component={Getstarted} />
+          <PrivateRoute path={"/edit"} component={EditPage} />
           <PublicOnlyRoute path={"/login"} component={LoginPage} />
           <PublicOnlyRoute path={"/register"} component={RegistrationPage} />
           <Route exact path={"/"} component={Homepage} />
