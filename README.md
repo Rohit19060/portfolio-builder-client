@@ -23,8 +23,9 @@
 
 ## Screenshots
 
-![Home Page](/screenshot/1.png "First page to User")
-![Get Started Page](/screenshot/2.png "All the Templates")
+![Home Page](/screenshot/1.png "Home Page")
+![Get Started Page](/screenshot/2.png "Get Started Page")
+![Template](/screenshot/3.png "Template")
 
 ## Available Scripts
 
