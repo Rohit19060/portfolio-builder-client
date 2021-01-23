@@ -3,9 +3,11 @@
   padding: 0px;
   margin: 0px;
 }
+
 .text-center {
   text-align: center;
 }
+
 .error-message {
   color: red;
 }
@@ -17,4 +19,368 @@
 a {
   color: #444;
   text-decoration: none;
+}
+
+.RegistrationForm {
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: 10% auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: -1px -1px 12px 5px rgba(232, 232, 232, 1);
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 130px;
+}
+
+.inputDiv input {
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 560px) {
+  .inputDiv {
+    flex-direction: column;
+  }
+}
+
+.RegistrationForm input[type=submit] {
+  outline: none;
+  padding: 5px 15px;
+  color: white;
+  background-color: rgb(42, 176, 230);
+  border: 2px white solid;
+  box-shadow: -1px -1px 12px 3px rgb(42, 176, 230);
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.RegistrationForm input[type="submit"]:hover {
+  color: rgb(42, 176, 230);
+  background-color: white;
+}
+
+.col_theme {
+  color: rgb(42, 176, 230);
+}
+
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mt-3 {
+  margin-top: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: auto;
+  color: rgb(42, 176, 230);
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 1px;
+  border: 2px white solid;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.column h3 {
+  margin: auto;
+  max-width: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column:hover {
+  border: 2px rgb(42, 176, 230) solid;
+}
+
+
+@media screen and (max-width: 450px) {
+  .column {
+    width: 100%;
+    padding: 30px 0px;
+  }
+}
+
+.main_section {
+  margin: 30px;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header__logged-in {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header__logged-in a {
+  border-radius: 30px;
+  border: 2px rgb(42, 176, 230) solid;
+  outline: none;
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(42, 176, 230);
+  box-shadow: -1px -1px 42px 1px rgb(42, 176, 230);
+}
+
+.Header__logged-in a:hover {
+  background-color: rgb(42, 176, 230);
+  color: white;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 450px) {
+  .Header {
+    align-items: baseline;
+  }
+
+  .Header h1 {
+    font-size: 22pt;
+  }
+}
+
+.main_div {
+  height: 50vh;
+  margin: 5% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(42, 176, 230);
+  border-radius: 15px;
+  color: whitesmoke;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  box-shadow: -1px -1px 12px 5px rgba(232, 232, 232, 1);
+}
+
+.getstarted {
+  border-radius: 30px;
+  border: 2px white solid;
+  outline: none;
+  padding: 5px 15px;
+  background-color: white;
+  color: rgb(42, 176, 230);
+  box-shadow: -1px -1px 42px 1px white;
+}
+
+.getstarted:hover {
+  background-color: rgb(42, 176, 230);
+  color: white;
+  box-shadow: none;
+}
+
+.sub {
+  width: 40%;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+
+}
+
+.title {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.sub_buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+
+  .main_div {
+    margin: 10%;
+    background-color: rgb(42, 176, 230);
+    padding: 10px;
+  }
+
+  .sub {
+    width: 100%;
+    word-wrap: inherit;
+    letter-spacing: 0px;
+    font-size: 12px;
+
+  }
+
+  .title {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .sub_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .getstarted {
+    border-radius: 30px;
+    border: 2px white solid;
+    outline: none;
+    padding: 2px;
+    background-color: white;
+    color: rgb(42, 176, 230);
+    box-shadow: -1px -1px 42px 1px white;
+  }
+
+  .getstarted:hover {
+    background-color: rgb(42, 176, 230);
+    color: white;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .main_div {
+    margin: 10%;
+    background-color: rgb(42, 176, 230);
+    padding: 10px;
+  }
+
+  .sub {
+    width: 100%;
+    word-wrap: inherit;
+    letter-spacing: 0px;
+
+  }
+
+  .sub_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .getstarted {
+    border-radius: 30px;
+    border: 2px white solid;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    color: rgb(42, 176, 230);
+    box-shadow: -1px -1px 42px 1px white;
+  }
+
+  .getstarted:hover {
+    background-color: rgb(42, 176, 230);
+    color: white;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .main_div {
+    margin: 10%;
+    background-color: rgb(42, 176, 230);
+    padding: 10px;
+  }
+
+  .sub {
+    width: 100%;
+    word-wrap: inherit;
+    letter-spacing: 0px;
+
+  }
+
+
+  .sub_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .getstarted {
+    border-radius: 30px;
+    border: 2px white solid;
+    outline: none;
+    padding: 10px;
+    background-color: white;
+    color: rgb(42, 176, 230);
+    box-shadow: -1px -1px 42px 1px white;
+  }
+
+  .getstarted:hover {
+    background-color: rgb(42, 176, 230);
+    color: white;
+    box-shadow: none;
+  }
+}
+
+.howtouse {
+  margin: 10%;
+  letter-spacing: 1.5px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.steps tr :first-child {
+  font-weight: bolder;
+}
+
+.steps tr td {
+  padding: 15px;
+}
+
+.Templated_Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.download_button {
+  border-radius: 30px;
+  border: 2px white solid;
+  outline: none;
+  padding: 5px 15px;
+  background-color: rgb(42, 176, 230);
+  color: white;
+  box-shadow: -1px -1px 42px 1px rgb(42, 176, 230);
+  cursor: pointer;
+}
+
+.download_button:hover {
+  background-color: white;
+  color: rgb(42, 176, 230);
+  box-shadow: none;
+  border: 2px rgb(42, 176, 230) solid;
 }

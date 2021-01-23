@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import config from "../../config";
-import "./GetStarted.css";
+
 export default class GetStarted extends Component {
   state = { templateData: [] };
   componentDidMount() {

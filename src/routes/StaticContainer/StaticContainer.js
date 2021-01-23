@@ -3,8 +3,8 @@ import TokenService from "../../services/token-service";
 import TemplateService from "../../services/template-service";
 import { Link } from "react-router-dom";
 import config from "../../config";
-import "./StaticContainer.css";
 import Header from "./../../Components/Header/Header";
+
 export default class StaticContainer extends Component {
   state = {
     __html: "",

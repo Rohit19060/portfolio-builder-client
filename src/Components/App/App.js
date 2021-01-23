@@ -10,7 +10,7 @@ import RegistrationPage from "../../routes/RegistrationPage/RegistrationPage";
 import EditPage from "../../routes/EditPage/EditPage";
 import NotFoundPage from "../../routes/NotFoundPage/NotFoundPage";
 import StaticContainer from "../../routes/StaticContainer/StaticContainer";
-import "./App.css";
+
 export default class App extends Component {
   state = { hasError: false };
 

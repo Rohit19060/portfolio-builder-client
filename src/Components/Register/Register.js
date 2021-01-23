@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthApiService from "../../services/auth-api-service";
-import "./Register.css";
+
 export default class Register extends Component {
   static defaultProps = {
     onRegistrationSuccess: () => {},

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import AuthApiService from "../../services/auth-api-service";
 import TokenService from "../../services/token-service";
-import "./Signin.css";
+
 export default class Signin extends Component {
   static defaultProps = {
     onLoginSuccess: () => {},
@@ -59,6 +59,10 @@ export default class Signin extends Component {
             <Link to="/register" className="col_theme">
               Register Instead
             </Link>
+          </div>
+          <div className="text-center mb-3 mt-3">
+            <h2>Demo User: user demo</h2>
+            <h2>Password: Demo2021!</h2>
           </div>
           <div className="text-center mb-2">
             <input type="submit" value="Submit" />
