@@ -27,7 +27,7 @@ exports[`Register component renders the Component 1`] = `
       <p />
     </div>
     <div
-      className="inputdiv"
+      className="inputDiv"
     >
       <label
         htmlFor="user_name"
@@ -42,7 +42,7 @@ exports[`Register component renders the Component 1`] = `
       />
     </div>
     <div
-      className="inputdiv"
+      className="inputDiv"
     >
       <label
         htmlFor="password"

@@ -27,7 +27,7 @@ exports[`Signin component renders the Component 1`] = `
       <p />
     </div>
     <div
-      className="inputdiv"
+      className="inputDiv"
     >
       <label
         htmlFor="user_name"
@@ -42,7 +42,7 @@ exports[`Signin component renders the Component 1`] = `
       />
     </div>
     <div
-      className="inputdiv"
+      className="inputDiv"
     >
       <label
         htmlFor="password"
@@ -67,6 +67,16 @@ exports[`Signin component renders the Component 1`] = `
       >
         Register Instead
       </Link>
+    </div>
+    <div
+      className="text-center mb-3 mt-3"
+    >
+      <h2>
+        Demo User: user demo
+      </h2>
+      <h2>
+        Password: Demo2021!
+      </h2>
     </div>
     <div
       className="text-center mb-2"

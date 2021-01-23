@@ -9,12 +9,12 @@ exports[`Homepage component renders the Component 1`] = `
     <h1
       className="text-center title"
     >
-      Time to make your own Portfolio
+      Time to make your Portfolio
     </h1>
     <h3
       className="text-center sub"
     >
-      If you want to make your Portfolio for free, then you came at right place. you can generate your portfolio in few steps
+      If you want to make your Portfolio for free, then you came to the right place. you can generate your portfolio in a few steps
     </h3>
     <div
       className="sub_buttons"

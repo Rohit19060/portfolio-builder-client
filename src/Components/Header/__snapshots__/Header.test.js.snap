@@ -2,25 +2,27 @@
 
 exports[`Header component renders the Component 1`] = `
 <Fragment>
-  <nav
-    className="Header"
+  <h1
+    className="text-center mb-3 mt-3"
   >
-    <h1>
-      <Link
-        replace={false}
-        to="/"
-      >
-        Portfolio Builder
-      </Link>
-    </h1>
+    <Link
+      replace={false}
+      to="/"
+    >
+      Portfolio Builder
+    </Link>
+  </h1>
+  <nav
+    className="Header mb-3"
+  >
     <div
-      className="Header__not-logged-in"
+      className="Header__logged-in"
     >
       <Link
         replace={false}
         to="/login"
       >
-        Log in
+        LogIn
       </Link>
       <Link
         replace={false}
